@@ -1,0 +1,34 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+  BankApp -> D:\Education\Object oriented programming\CA2\BankApp\BankApp\bin\Debug\net9.0-windows\BankApp.dll
+  BankApp.Tests -> D:\Education\Object oriented programming\CA2\BankApp\BankApp.Tests\bin\Debug\net9.0-windows\BankApp.Tests.dll
+Test run for D:\Education\Object oriented programming\CA2\BankApp\BankApp.Tests\bin\Debug\net9.0-windows\BankApp.Tests.dll (.NETCoreApp,Version=v9.0)
+VSTest version 17.12.0 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+  Failed BankSystemWrapper_AuthenticateUser_WithBlankStrings_ReturnsNull [49 ms]
+  Error Message:
+   Test method BankApp.Tests.Tier2_WrapperTests.BankSystemWrapper_AuthenticateUser_WithBlankStrings_ReturnsNull threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+  Stack Trace:
+      at BankApp.Data.DatabaseHelper..ctor() in D:\Education\Object oriented programming\CA2\BankApp\BankApp\Data\DatabaseHelper.cs:line 17
+   at BankApp.Services.AccountService..ctor() in D:\Education\Object oriented programming\CA2\BankApp\BankApp\Services\AccountService.cs:line 17
+   at BankApp.Services.BankSystemWrapper..ctor() in D:\Education\Object oriented programming\CA2\BankApp\BankApp\Services\BankSystemWrapper.cs:line 13
+   at BankApp.Tests.Tier2_WrapperTests.BankSystemWrapper_AuthenticateUser_WithBlankStrings_ReturnsNull() in D:\Education\Object oriented programming\CA2\BankApp\BankApp.Tests\Tier2_WrapperTests.cs:line 13
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed DatabaseHelper_ExecuteQuery_WithBadSql_ShouldThrowException [49 ms]
+  Error Message:
+   Test method BankApp.Tests.Tier3_DataAccessTests.DatabaseHelper_ExecuteQuery_WithBadSql_ShouldThrowException threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+  Stack Trace:
+      at BankApp.Data.DatabaseHelper..ctor() in D:\Education\Object oriented programming\CA2\BankApp\BankApp\Data\DatabaseHelper.cs:line 17
+   at BankApp.Tests.Tier3_DataAccessTests.DatabaseHelper_ExecuteQuery_WithBadSql_ShouldThrowException() in D:\Education\Object oriented programming\CA2\BankApp\BankApp.Tests\Tier3_DataAccessTests.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+
+Failed!  - Failed:     2, Passed:     3, Skipped:     0, Total:     5, Duration: 67 ms - BankApp.Tests.dll (net9.0)
+
